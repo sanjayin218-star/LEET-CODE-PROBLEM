@@ -6,13 +6,13 @@ class Solution {
             int digit = x % 10;
             x = x / 10;
 
-            // Check for overflow
+        
             if (rev > Integer.MAX_VALUE / 10 || 
                (rev == Integer.MAX_VALUE / 10 && digit > 7)) {
                 return 0;
             }
 
-            // Check for underflow
+            
             if (rev < Integer.MIN_VALUE / 10 || 
                (rev == Integer.MIN_VALUE / 10 && digit < -8)) {
                 return 0;
