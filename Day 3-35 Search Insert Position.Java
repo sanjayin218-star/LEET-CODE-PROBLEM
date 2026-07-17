@@ -14,8 +14,6 @@ class Solution {
                 right = mid - 1; // Target is in the left half
             }
         }
-        
-        // If not found, 'left' will point to the correct insertion index
         return left;
     }
 }
